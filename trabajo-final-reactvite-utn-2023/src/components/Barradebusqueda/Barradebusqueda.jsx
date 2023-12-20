@@ -1,7 +1,7 @@
 
 
 import React, { useState, useEffect } from 'react';
-import './SearchBar.css';
+import './Barradebusqueda.css';
 
 const SearchBar = ({ addToFavorites }) => {
     const [query, setQuery] = useState('');

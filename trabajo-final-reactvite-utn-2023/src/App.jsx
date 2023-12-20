@@ -1,12 +1,13 @@
 // App.jsx
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header/Header.jsx';
-import SearchBar from './components/SearchBar/SearchBar.jsx';
+import Barradebusqueda from './components/Barradebusqueda/Barradebusqueda.jsx';
 import Favoritos from './components/Favoritos/Favoritos.jsx';
 import Tendencias from './components/Tendencias/Tendencias.jsx';
-import Genero from './components/Genero/Genero.jsx';
+import Generos from './components/Generos/Generos.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import './App.css';
+
 
 
 const App = () => {
@@ -50,10 +51,10 @@ const App = () => {
   return (
     <>
       <Header />
-      <SearchBar addToFavorites={addToFavorites} />
+      <Barradebusqueda addToFavorites={addToFavorites} />
       <Favoritos favorites={favorites} removeFromFavorites={removeFromFavorites} />
       <Tendencias addToFavorites={addToFavorites} favoritos={favorites} />
-      <Genero genres={genres} />
+      <Generos genres={genres} />
       <Footer />
     </>
   );

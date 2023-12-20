@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Genero.css';
+import './Generos.css';
 
 const GeneroSection = ({ genres }) => {
   const [genresWithMovies, setGenresWithMovies] = useState([]);
